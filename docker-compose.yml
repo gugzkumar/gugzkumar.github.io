@@ -1,0 +1,18 @@
+# ------------------------------------------------------------------------------
+# LOCAL DOCKER COMPOSE
+#
+# This Docker Compose is meant to test Jekyl website locally
+# ------------------------------------------------------------------------------
+version: '3.7'
+services:
+    # --------------------------------------------------------------------------
+    # WEBSITE WRITTEN IN JEKYLL
+    # --------------------------------------------------------------------------
+    personal-website:
+        build: ./src
+        container_name: personal-website-local
+        ports:
+          - "4000:4000"
+        volumes:
+          - ./src:/usr/src/app
+        command: sh -c "cd website && bundle install && jekyll serve --host 0.0.0.0"
