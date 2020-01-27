@@ -1,8 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
+import {Helmet} from "react-helmet";
+import styled from "styled-components";
+// import SmoothScroll from 'smooth-scroll'
+// import { Link } from "gatsby"
 
-import { rhythm, scale } from "../../utils/typography"
-import { Header, Footer } from "../"
+import { Header, Footer } from "../";
+
+if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+    // SmoothScroll('#about, #skills, #experience');
+}
+
+const StyledLayout = styled.div`
+    &,.app-content,.app-navbar,main {
+        height: 100%;
+    }
+    .app-navbar {
+        position: fixed;
+        width: 156px;
+    }
+    .app-content {
+        margin-left: 156px;
+    }
+`
 
 class Layout extends React.Component {
   render() {
@@ -11,18 +32,28 @@ class Layout extends React.Component {
     const header = <Header/>;
 
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-        }}
-      >
-        <Header></Header>
-        <main>{children}</main>
-        <Footer>
-          © Gagan Tunuguntla
-        </Footer>
-      </div>
+        <>
+            <Helmet>
+                <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet" />
+            </Helmet>
+            <StyledLayout
+            style={{
+              marginLeft: `auto`,
+              marginRight: `auto`,
+              fontFamily: "Nunito"
+            }}
+            >
+                <Header className="app-navbar" location={this.props.location}></Header>
+                <div className="app-content">
+                    <main>{children}</main>
+                </div>
+                {/*<Footer>
+                  © Gagan Tunuguntla
+                </Footer>*/}
+            </StyledLayout>
+        </>
     )
   }
 }

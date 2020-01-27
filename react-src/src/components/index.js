@@ -4,3 +4,7 @@ export { default as Header } from './header/header.js';
 export { default as Layout } from './layout/layout.js';
 export { default as Logo } from './logo/logo.js';
 export { default as SEO } from './seo/seo.js';
+
+export { default as LandingRowAbout } from './landing-row-about';
+export { default as LandingRowSkills } from './landing-row-skills';
+export { default as LandingRowExperience } from './landing-row-experience';

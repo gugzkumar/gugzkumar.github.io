@@ -2,7 +2,12 @@
  *  This is the Landing Page
  */
 import React from 'react';
-import { Layout } from "../components/";
+import {
+    Layout,
+    LandingRowAbout,
+    LandingRowSkills,
+    LandingRowExperience
+} from "../components/";
 
 class LandingPage extends React.Component {
 
@@ -15,7 +20,9 @@ class LandingPage extends React.Component {
 
         return (
             <Layout location={this.props.location} title={'TEST'}>
-
+                <LandingRowAbout id="about" />
+                <LandingRowSkills id="skills" />
+                <LandingRowExperience id="experience" />
             </Layout>
         )
     }
