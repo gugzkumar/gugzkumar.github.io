@@ -1,7 +1,7 @@
 ---
 title: Hello World
 date: "2020-01-22T22:12:03.284Z"
-description: "This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter."
+description: "Welcome to my blog."
 ---
 
 Hello there!

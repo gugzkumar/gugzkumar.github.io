@@ -17,12 +17,11 @@ const green = "#7CB518";
 const greenCompliment = "#5C8001";
 
 const yellowOrange = "#FF9F1C";
+const orange="#FB6107"
 const roseMadder = "#E71D36";
 const blueGreen = "#2EC4B6";
 const blueGreenCompliment = "#80e4d9"
 const darkBlue = "#011627";
-
-
 
 
 export default {

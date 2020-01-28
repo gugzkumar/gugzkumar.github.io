@@ -1,8 +1,11 @@
 import React from 'react';
 import theme from "../theme";
-import styled, { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider, css } from "styled-components";
 import { Link } from "gatsby";
+import { graphql } from "gatsby";
+import Image from "gatsby-image"
 import Scrollspy from 'react-scrollspy';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const menuItems = [
     { label: 'About' , link: '/#about', backgroundcolor: theme.primaryAbout, color: theme.foreground, id:"about" },
@@ -15,6 +18,9 @@ const menuItems = [
 const StyledHeader = styled.div`
     color: ${props => props.theme.background};
     background-color: ${props => props.theme.navbar};
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     ul {
       display: flex;
       flex-direction: column;
@@ -23,6 +29,15 @@ const StyledHeader = styled.div`
       text-align: center;
       text-transform: Uppercase;
       text-orientation: lr;
+    }
+    .social-media-container {
+        font-size: 40px;
+        display: flex;
+        justify-content: space-between !important;
+        margin: 52px 24px;
+    }
+    .profile-pic {
+        align-self: center;
     }
 `
 
@@ -45,12 +60,17 @@ const StyledLinkContainer = styled.div`
             text-decoration: underline;
         }
     }
-    &.is-current {
-        color: ${props => props.color};
-        background-color: ${props => props.backgroundcolor};
-        font-weight: 800;
+    ${props => true ? css`
+            &.is-current {
+                color: ${props => props.color};
+                background-color: ${props => props.backgroundcolor};
+                font-weight: 800;
+            }`
+            : ``
     }
 `
+
+
 
 
 class Header extends React.Component {
@@ -65,11 +85,11 @@ class Header extends React.Component {
     }
 
     render () {
+
         return (
             <ThemeProvider theme={theme}>
                 <StyledHeader className={this.props.className}>
-                    <ul>
-                        <Scrollspy items={menuItems.map(obj => obj.id)} currentClassName="is-current">
+                    <Scrollspy items={menuItems.map(obj => obj.id)} currentClassName="is-current" onEvent={e => console.log(e)} offset={-20}>
                         {menuItems.map(({ label, link, backgroundcolor, color }) => {
                             return <StyledLinkContainer backgroundcolor={backgroundcolor} color={color} key={label}>
                                     <Link to={link}><li>
@@ -77,9 +97,19 @@ class Header extends React.Component {
                                     </li></Link>
                                 </StyledLinkContainer>
                         })}
-                        </Scrollspy>
-                    </ul>
-
+                    </Scrollspy>
+                    <Image
+                      className={'profile-pic'}
+                      fixed={this.props.avatar.childImageSharp.fixed}
+                      style={{
+                        minWidth: 50,
+                        borderRadius: `100%`,
+                      }}
+                    />
+                    <div className={`social-media-container`}>
+                        <FaLinkedin />
+                        <FaGithub />
+                    </div>
                 </StyledHeader>
             </ThemeProvider>
         )
