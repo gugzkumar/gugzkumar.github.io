@@ -21,6 +21,7 @@ const StyledHeader = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 10;
     ul {
       display: flex;
       flex-direction: column;
@@ -38,6 +39,21 @@ const StyledHeader = styled.div`
     }
     .profile-pic {
         align-self: center;
+    }
+
+    @media only screen and (max-width: 900px) {
+        &, ul {
+            flex-direction: row;
+        }
+        .social-media-container {
+            font-size: 24px;
+            margin: 0px 24px;
+            align-self: center;
+            svg {
+                margin-left: 12px;
+            }
+        }
+
     }
 `
 
@@ -67,6 +83,14 @@ const StyledLinkContainer = styled.div`
                 font-weight: 800;
             }`
             : ``
+    }
+
+    @media only screen and (max-width: 900px) {
+        li {
+            font-size: 12px;
+            padding: 0px;
+            margin: 12px 8px;
+        }
     }
 `
 
@@ -98,14 +122,6 @@ class Header extends React.Component {
                                 </StyledLinkContainer>
                         })}
                     </Scrollspy>
-                    <Image
-                      className={'profile-pic'}
-                      fixed={this.props.avatar.childImageSharp.fixed}
-                      style={{
-                        minWidth: 50,
-                        borderRadius: `100%`,
-                      }}
-                    />
                     <div className={`social-media-container`}>
                         <FaLinkedin />
                         <FaGithub />

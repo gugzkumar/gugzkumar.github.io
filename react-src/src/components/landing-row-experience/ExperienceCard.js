@@ -34,7 +34,7 @@ const StyledCard = styled.div`
         justify-content: space-between;
         align-items: base-line;
         margin-bottom: 40px;
-        .title-experience-type {
+        .title-experience-type, .title-experience-position {
             color: ${(props) => props.theme.secondaryExperience};
         }
     }
@@ -44,14 +44,20 @@ const StyledCard = styled.div`
     .technology-column {
         margin-top: 16px;
     }
+    .title-experience-right-column {
+        align-self: flex-end;
+    }
 `
 
 
 const ExperienceCard = (props) => (
     <StyledCard className={props.className}>
         <div className={'title-container'}>
-            <h1> {props.name} </h1>
             <div>
+                <h1> {props.name} </h1>
+                <b className={'title-experience-position'}> {props.position} </b>
+            </div>
+            <div className={'title-experience-right-column'}>
                 <h3><i> {props.timeRange} </i></h3>
                 <i className={'title-experience-type'}> {props.experienceType} </i>
             </div>

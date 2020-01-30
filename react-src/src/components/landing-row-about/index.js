@@ -10,6 +10,7 @@ const StyledRow = styled.div`
     width: 100%;
     margin: 0;
     text-align: center;
+
 `
 
 class LandingRowAbout extends React.Component {

@@ -23,6 +23,19 @@ const StyledLayout = styled.div`
     .app-content {
         margin-left: 156px;
     }
+
+    @media only screen and (max-width: 900px) {
+        .app-content {
+            margin-left: 0px;
+            margin-top: 40px;
+        }
+        .app-navbar {
+            width: 100%;
+            height: 40px;
+            position: fixed;
+            top: 0px;
+        }
+    }
 `
 
 class Layout extends React.Component {

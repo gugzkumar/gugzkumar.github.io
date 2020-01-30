@@ -29,7 +29,7 @@ class Logo extends React.Component {
 
     render () {
         return (
-            <StyledLogo>
+            <StyledLogo className={this.props.className}>
                 <div className="first-name">
                     G<span className="first-name-special-letter">A</span>GAN
                 </div>

@@ -6,7 +6,8 @@ import {
     Layout,
     LandingRowAbout,
     LandingRowSkills,
-    LandingRowExperience
+    LandingRowExperience,
+    SEO
 } from "../components/";
 
 class LandingPage extends React.Component {
@@ -17,13 +18,15 @@ class LandingPage extends React.Component {
     }
 
     render () {
-
         return (
-            <Layout location={this.props.location} title={'TEST'}>
-                <LandingRowAbout id="about" />
-                <LandingRowSkills id="skills" />
-                <LandingRowExperience id="experience" />
-            </Layout>
+            <>
+                <SEO title="Software Engineer"/>
+                <Layout location={this.props.location}>
+                    <LandingRowAbout id="about" />
+                    <LandingRowSkills id="skills" />
+                    <LandingRowExperience id="experience" />
+                </Layout>
+            </>
         )
     }
 

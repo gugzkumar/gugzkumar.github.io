@@ -24,7 +24,7 @@ const SkillCard = styled.div`
     background-color: ${props => props.theme.background};
     width: 244px;
     height: 480px;
-    margin: 10px 10px;
+    margin: 12px 12px;
     padding: 1px;
     border-radius: 10px;
     box-shadow: -1px 15px 30px -12px black;
@@ -44,6 +44,26 @@ const SkillCard = styled.div`
     p {
         margin: 0px 10px;
     }
+
+    @media only screen and (max-width: 1300px) {
+        & {
+            width: 183px;
+            height: 360px;
+        }
+        svg {
+            margin-top: 8px;
+            margin-top: 8px;
+            height: 120px;
+            width: 120px;
+        }
+        h2 {
+            font-size: 1.2em;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+
 `
 
 class LandingRowSkills extends React.Component {
