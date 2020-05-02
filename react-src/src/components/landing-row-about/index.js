@@ -17,7 +17,6 @@ class LandingRowAbout extends React.Component {
     }
 
     componentDidMount() {
-
         this.timerID = setTimeout(
           () => this.setGivenClassName(),
           5
