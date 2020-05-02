@@ -67,25 +67,6 @@ export const SkillCard = styled.div`
 
     @media only screen and (max-width: 1300px) {
         & {
-            width: 182px;
-            height: 360px;
-        }
-        svg {
-            margin-top: 8px;
-            margin-top: 8px;
-            height: 120px;
-            width: 120px;
-        }
-        h2 {
-            font-size: 1.2em;
-        }
-        p {
-            font-size: 12px;
-        }
-    }
-
-    @media only screen and (max-width: 1300px) {
-        & {
             width: 180px;
             height: 360px;
         }
