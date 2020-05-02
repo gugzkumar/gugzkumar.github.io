@@ -3,7 +3,8 @@ import {Helmet} from "react-helmet";
 import styled from "styled-components";
 // import { Link } from "gatsby"
 
-import { Header, Footer } from "../";
+import { Header } from "../";
+// import { Header, Footer } from "../";
 
 const StyledLayout = styled.div`
     &,.app-content,.app-navbar,main {
@@ -33,9 +34,10 @@ const StyledLayout = styled.div`
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props;
-    const rootPath = `${__PATH_PREFIX__}/`;
-    const header = <Header/>;
+    // const { location, title, children } = this.props;
+    // const rootPath = `${__PATH_PREFIX__}/`;
+    const { children } = this.props;
+    // const header = <Header/>;
 
     return (
         <>

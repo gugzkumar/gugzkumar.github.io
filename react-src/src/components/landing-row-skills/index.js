@@ -1,6 +1,6 @@
 import React from 'react';
 import theme from "../theme";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import Fade from 'react-reveal/Fade';
 import SwipeableViews from 'react-swipeable-views';
 import DataEngineeringSVG from './DataEngineeringSVG';

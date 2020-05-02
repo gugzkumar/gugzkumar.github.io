@@ -1,6 +1,5 @@
 import React from 'react';
-import theme from "../theme";
-import styled, { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 
 const StyledLogo = styled.div`
     display: inline-flex;

@@ -1,9 +1,7 @@
 import React from 'react';
 import theme from "../theme";
-import styled, { ThemeProvider, css } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { Link } from "gatsby";
-import { graphql } from "gatsby";
-import Image from "gatsby-image"
 import Scrollspy from 'react-scrollspy';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { StyledHeader, StyledLinkContainer } from './styles'

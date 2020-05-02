@@ -1,5 +1,4 @@
-import theme from "../theme";
-import styled, { ThemeProvider, css } from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledHeader = styled.div`
     color: ${props => props.theme.background};

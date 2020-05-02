@@ -13,20 +13,20 @@ const yellowCompliment = "#726012";
 // const yellowCompliment = "#ffe364";
 // const yellow ="#EDAE49"
 
-const blue = "#3772FF";
+// const blue = "#3772FF";
 // 256EFF
 
 // const purple = "#41337A";
-const purple ="#8A1C7C";
+// const purple ="#8A1C7C";
 
 const green = "#7CB518";
 const greenCompliment = "#5C8001";
 
-const yellowOrange = "#FF9F1C";
-const orange="#FB6107"
+// const yellowOrange = "#FF9F1C";
+// const orange="#FB6107"
 const roseMadder = "#E71D36";
-const blueGreen = "#2EC4B6";
-const blueGreenCompliment = "#80e4d9"
+// const blueGreen = "#2EC4B6";
+// const blueGreenCompliment = "#80e4d9"
 const darkBlue = "#011627";
 
 
@@ -40,8 +40,8 @@ export default {
     navbar: darkBlue,
     primaryAbout: yellow,
     secondaryAbout: yellowCompliment,
-    primarySkills: blueGreen,
-    secondarySkills: blueGreenCompliment,
+    // primarySkills: blueGreen,
+    // secondarySkills: blueGreenCompliment,
     primaryExperience: green,
     secondaryExperience: greenCompliment,
 
@@ -61,5 +61,10 @@ export default {
         Orbitron: "Orbitron",
         Nunito: "Nunito",
         Itim: "Itim"
+    },
+    // Break Points
+    breakPoints: {
+        tablet: 1024,
+        mobile: 720
     }
 }

@@ -104,8 +104,8 @@ class LandingRowExperience extends React.Component {
         super(props);
         this.props = props;
         experienceObject.map((experience) => {
-            experience.onClick = () => {
-                this.setState({selectedExperience: experience});
+            return experience.onClick = () => {
+                return this.setState({selectedExperience: experience});
             };
         });
         this.state = {selectedExperience: experienceObject[0]};
