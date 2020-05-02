@@ -34,6 +34,7 @@
     "react-icons": "^3.8.0",
     "react-reveal": "^1.2.2",
     "react-scrollspy": "^3.4.2",
+    "react-swipeable-views": "^0.13.8",
     "react-typography": "^0.16.19",
     "smooth-scroll": "^16.1.2",
     "styled-components": "^5.0.0",

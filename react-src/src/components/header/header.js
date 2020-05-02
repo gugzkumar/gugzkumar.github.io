@@ -59,6 +59,7 @@ const StyledHeader = styled.div`
 
 const StyledLinkContainer = styled.div`
     cursor: pointer;
+    width: calc(100% + 1px);
     a {
         display: block;
         text-decoration: none;
@@ -113,7 +114,7 @@ class Header extends React.Component {
         return (
             <ThemeProvider theme={theme}>
                 <StyledHeader className={this.props.className}>
-                    <Scrollspy items={menuItems.map(obj => obj.id)} currentClassName="is-current" onEvent={e => console.log(e)} offset={-20}>
+                    <Scrollspy items={menuItems.map(obj => obj.id)} currentClassName="is-current" >
                         {menuItems.map(({ label, link, backgroundcolor, color }) => {
                             return <StyledLinkContainer backgroundcolor={backgroundcolor} color={color} key={label}>
                                     <Link to={link}><li>

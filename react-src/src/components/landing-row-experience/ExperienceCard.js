@@ -6,6 +6,7 @@ const StyledCard = styled.div`
     background-color: ${(props) => props.theme.background};
     border-radius: 15px;
     max-width: 680px;
+    max-height: 556px;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: -1px 15px 30px -12px black;

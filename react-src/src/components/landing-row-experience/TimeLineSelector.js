@@ -14,6 +14,7 @@ const StyledDiv = styled.div`
     box-shadow: -1px 15px 30px -12px black;
     border-radius: 20px;
     .timeline-button {
+        box-sizing: content-box;
         align-items: center;
         background-color: ${(props) => props.theme.foreground};
         color: ${(props) => props.theme.background};

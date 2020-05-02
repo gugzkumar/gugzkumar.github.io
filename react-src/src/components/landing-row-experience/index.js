@@ -3,11 +3,12 @@ import theme from "../theme";
 import styled, { ThemeProvider } from "styled-components";
 import ExperienceCard from './ExperienceCard';
 import TimeLineSelector from './TimeLineSelector';
+import Fade from 'react-reveal/Fade';
 
 const StyledRow = styled.div`
     color: ${props => props.theme.foreground};
     background-color: ${props => props.theme.primaryExperience};
-    height: 100%;
+    height: calc(100% + 1px);
     width: 100%;
     margin: 0;
     text-align: center;
@@ -114,10 +115,12 @@ class LandingRowExperience extends React.Component {
         return (
             <ThemeProvider theme={theme}>
                 <StyledRow id={this.props.id}>
-                    <div className="experience-container">
-                        <TimeLineSelector className={'timeline'} selectedExperience={this.state.selectedExperience} experiences={experienceObject}/>
-                        <ExperienceCard className={'experience-card'} {...this.state.selectedExperience} />
-                    </div>
+                    <Fade>
+                        <div className="experience-container">
+                            <TimeLineSelector className={'timeline'} selectedExperience={this.state.selectedExperience} experiences={experienceObject}/>
+                            <ExperienceCard className={'experience-card'} {...this.state.selectedExperience} />
+                        </div>
+                    </Fade>
                 </StyledRow>
             </ThemeProvider>
         )

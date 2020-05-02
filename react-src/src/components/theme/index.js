@@ -9,9 +9,15 @@ const maroon = "#7B0000";
 const white = "#FDFFFC";
 
 const yellow = "#FFD000";
-const yellowCompliment = "#ffe364";
+const yellowCompliment = "#726012";
+// const yellowCompliment = "#ffe364";
+// const yellow ="#EDAE49"
 
 const blue = "#3772FF";
+// 256EFF
+
+// const purple = "#41337A";
+const purple ="#8A1C7C";
 
 const green = "#7CB518";
 const greenCompliment = "#5C8001";
