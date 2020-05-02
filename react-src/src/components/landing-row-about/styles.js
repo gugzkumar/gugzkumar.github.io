@@ -10,7 +10,7 @@ export const StyledRow = styled.div`
     /* display: flex; */
     display: ${props => (props.showRow ? 'flex' : 'none')};
     flex-direction: column;
-    padding-top: 15%;
+    padding-top: 10%;
     /* justify-content: center; */
     text-align: left;
     padding-left: 8%;

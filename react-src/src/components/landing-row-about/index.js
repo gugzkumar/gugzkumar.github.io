@@ -12,10 +12,12 @@ class LandingRowAbout extends React.Component {
     constructor(props) {
         super(props);
         this.props = props;
+        // Set useGivenIdName to prevent scrolling glitch
         this.state = { useGivenIdName: false }
     }
 
     componentDidMount() {
+
         this.timerID = setTimeout(
           () => this.setGivenClassName(),
           5
@@ -34,21 +36,21 @@ class LandingRowAbout extends React.Component {
 
                 </StyledRow>
                 <StyledRow id={this.props.id} showRow={this.state.useGivenIdName}>
-                        <Fade bottom cascade>
+                        <Fade bottom>
                             <div className={'about-intro'}>
                                 Hey there! I'm
                             </div>
                         </Fade>
-                        <div className={'about-name'}>
-                            <Fade bottom cascade>
+                        <Fade bottom>
+                            <div className={'about-name'}>
                                 <b>Gagan Kumar Tunuguntla</b>
-                            </Fade>
-                        </div>
-                        <div className={'about-caption'}>
-                            <Fade bottom cascade>
+                            </div>
+                        </Fade>
+                        <Fade bottom>
+                            <div className={'about-caption'}>
                                 <b>I'm a Full Stack Software Engineer.</b>
-                            </Fade>
-                        </div>
+                            </div>
+                        </Fade>
                         <Fade>
                             <div className={'about-description'}>
                                 I've solved all kinds of problems across a variety of
