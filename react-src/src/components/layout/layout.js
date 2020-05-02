@@ -1,16 +1,9 @@
 import React from "react"
 import {Helmet} from "react-helmet";
 import styled from "styled-components";
-// import SmoothScroll from 'smooth-scroll'
 // import { Link } from "gatsby"
 
 import { Header, Footer } from "../";
-
-if (typeof window !== "undefined") {
-    // eslint-disable-next-line global-require
-    require("smooth-scroll")('a[href*="#"]')
-    // SmoothScroll('#about, #skills, #experience');
-}
 
 const StyledLayout = styled.div`
     &,.app-content,.app-navbar,main {

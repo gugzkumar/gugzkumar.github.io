@@ -47,6 +47,9 @@ export const StyledRow = styled.div`
         color: ${props => props.theme.secondaryAbout};
         b {
             color: ${props => props.theme.foreground};
+            a {
+              color: #1f6ce6;
+            }
         }
     }
     .about-button-row {
@@ -68,7 +71,6 @@ export const  StyledButton = styled.button`
         color: ${props => props.theme.background};
         box-shadow: -1px 5px 30px -5px black;
         outline: none;
-        /* box-shadow: -2px 15px 30px -12px black; */
     }
     &:active {
         background-color: ${props => props.theme.secondaryAbout};

@@ -46,14 +46,14 @@ class LandingRowAbout extends React.Component {
                         </div>
                         <div className={'about-caption'}>
                             <Fade bottom cascade>
-                                <b>I'm a software enginer.</b>
+                                <b>I'm a Full Stack Software Engineer.</b>
                             </Fade>
                         </div>
                         <Fade>
                             <div className={'about-description'}>
                                 I've solved all kinds of problems across a variety of
                                 industries including Government, Supply Chain, Healthcare, E-Commerce, even Cosmetics.
-                                Currently I work for <b>Elephant Ventures</b>.
+                                Currently I work for <b><a href="https://www.elephantventures.com/" target="_blank">Elephant Ventures</a></b>.
                                 Check us out, we're a Venture Development firm.
                                 <br/><br/>
                                 My belief is to build <b>Products over Software</b> and that being able to <b>communicate effectively</b> and <b>working with others</b> is more important than any Tech you know.
