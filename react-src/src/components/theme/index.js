@@ -67,7 +67,8 @@ export default {
     },
     // Break Points
     breakPoints: {
-        tablet: 1024,
+        desktop: 1440,
+        laptop: 1024,
         mobile: 720
     },
     spacing: {

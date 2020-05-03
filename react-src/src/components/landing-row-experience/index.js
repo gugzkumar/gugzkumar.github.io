@@ -92,9 +92,9 @@ class LandingRowExperience extends React.Component {
         return (
             <ThemeProvider theme={theme}>
                 <Fade>
-                  <StyledTitle><i> My Education and Experience </i></StyledTitle>
+                  <StyledTitle id={this.props.id}><i> My Education and Experience </i></StyledTitle>
                 </Fade>
-                <StyledRow id={this.props.id}>
+                <StyledRow>
                     <Fade>
                         <div className="experience-container">
                             <TimeLineSelector className={'timeline'} selectedExperience={this.state.selectedExperience} experiences={experienceObject}/>

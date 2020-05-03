@@ -14,13 +14,12 @@ const StyledLayout = styled.div`
     }
     .app-content {
         margin-left: 0px;
-        margin-top: 40px;
     }
     .app-navbar {
         width: 100%;
         height: 40px;
         position: fixed;
-        top: 0px;
+        top: -1px;
     }
 
 `

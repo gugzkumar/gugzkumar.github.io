@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Background from './background.jpeg';
 
 export const StyledRow = styled.div`
     color: ${props => props.theme.background};
@@ -10,7 +9,7 @@ export const StyledRow = styled.div`
     margin-bottom: -1px;
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
+    padding-top: calc(5% + 40px);
     text-align: left;
     padding-left: ${props => props.theme.spacing.leftPadding};
     padding-bottom: 2%;
@@ -26,7 +25,6 @@ export const StyledRow = styled.div`
         color: ${props => props.theme.background};
         font-family: "Itim";
         letter-spacing: 2px;
-        /* font-size: 4vw; */
     }
     .about-name {
         font-size: 56px;
@@ -51,6 +49,16 @@ export const StyledRow = styled.div`
     }
     .about-button-row {
         margin-top: 40px;
+    }
+
+    @media only screen and (max-width: ${props => props.theme.breakPoints.mobile}px) {
+        .about-button-row {
+            display: flex;
+            flex-direction: column;
+            button {
+              margin-bottom: 16px;
+            }
+        }
     }
 `
 

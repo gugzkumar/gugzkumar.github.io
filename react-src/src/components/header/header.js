@@ -9,8 +9,8 @@ import { StyledHeader, StyledLinkContainer } from './styles'
 const menuItems = [
     { label: 'About' , link: '/#about', backgroundcolor: theme.primaryAbout, color: theme.foreground, id:"about" },
     { label: 'Skills' , link: '/#skills', backgroundcolor: theme.primarySkills, color: theme.background, id:"skills" },
-    // { label: 'Projects' , link: '', backgroundcolor: theme.primaryAbout, color: theme.foreground, id:"" },
     { label: 'Experience' , link: '/#experience', backgroundcolor: theme.primaryExperience, color: theme.foreground, id:"experience" },
+    { label: 'Portfolio' , link: '/#portfolio', backgroundcolor: theme.primaryAbout, color: theme.foreground, id:"portfolio" },
     { label: 'Blogs' , link: '/blog', backgroundcolor: theme.primaryBlogs, color: theme.foreground, id:"blogs" }
 ];
 

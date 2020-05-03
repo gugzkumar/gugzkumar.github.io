@@ -13,7 +13,7 @@ export const StyledRow = styled.div`
     align-items: center;
     .experience-container{
         height: 70%;
-        width: 70%;
+        margin: 12px;
         max-width: 680px;
     }
     .timeline {

@@ -7,6 +7,7 @@ import {
     LandingRowAbout,
     LandingRowSkills,
     LandingRowExperience,
+    LandingRowPortfolio,
     SEO
 } from "../components/";
 
@@ -25,6 +26,7 @@ class LandingPage extends React.Component {
                     <LandingRowAbout id="about" />
                     <LandingRowSkills id="skills" />
                     <LandingRowExperience id="experience" />
+                    <LandingRowPortfolio id="portfolio" />
                 </Layout>
             </>
         )
