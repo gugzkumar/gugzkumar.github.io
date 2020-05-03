@@ -2,9 +2,7 @@ import React from "react"
 import {Helmet} from "react-helmet";
 import styled from "styled-components";
 // import { Link } from "gatsby"
-
-import { Header } from "../";
-// import { Header, Footer } from "../";
+import { Header, Footer } from "../";
 
 const StyledLayout = styled.div`
     &,.app-content,.app-navbar,main {
@@ -52,9 +50,7 @@ class Layout extends React.Component {
                 <div className="app-content">
                     <main>{children}</main>
                 </div>
-                {/*<Footer>
-                  © Gagan Tunuguntla
-                </Footer>*/}
+                <Footer/>
             </StyledLayout>
         </>
     )

@@ -11,10 +11,12 @@ import { StyledRow, StyledTitle, SkillCard } from './styles';
 
 const swipeableStyles = {
   root: {
-    height: '100%'
+    height: '100%',
+    overflowY: 'visible',
   },
   slideContainer: {
     height: '100%',
+    overflow: 'visible'
   },
 };
 
@@ -29,7 +31,9 @@ class LandingRowSkills extends React.Component {
         return (
             <ThemeProvider id={this.props.id} theme={theme}>
                 <div id={this.props.id} style={{'height': 'calc(100% + 1px)'}}>
-                <StyledTitle> My Skills </StyledTitle>
+                <Fade>
+                  <StyledTitle><i> My Skills </i></StyledTitle>
+                </Fade>
                 <StyledRow className="screen-desktop">
                     <Fade>
                         <SkillCard>

@@ -7,6 +7,7 @@ export const StyledRow = styled.div`
     height: calc(100% + 1px);
     width: 100%;
     margin: 0;
+    margin-bottom: -1px;
     display: flex;
     flex-direction: column;
     padding-top: 5%;
@@ -41,7 +42,10 @@ export const StyledRow = styled.div`
         b {
             color: ${props => props.theme.yellow};
             a {
-              color: ${props => props.theme.blue};;
+              color: ${props => props.theme.yellow};
+            }
+            a:hover {
+              color: ${props => props.theme.lightYellow};;
             }
         }
     }

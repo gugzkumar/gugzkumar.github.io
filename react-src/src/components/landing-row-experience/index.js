@@ -4,28 +4,7 @@ import styled, { ThemeProvider } from "styled-components";
 import ExperienceCard from './ExperienceCard';
 import TimeLineSelector from './TimeLineSelector';
 import Fade from 'react-reveal/Fade';
-
-const StyledRow = styled.div`
-    color: ${props => props.theme.foreground};
-    background-color: ${props => props.theme.background};
-    height: calc(100% + 1px);
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .experience-container{
-        height: 70%;
-        width: 70%;
-        max-width: 680px;
-    }
-    .timeline {
-        margin-bottom: 24px;
-    }
-    padding-bottom: 5%;
-`
+import { StyledRow, StyledTitle } from './styles';
 
 const experienceObject = [
     {
@@ -37,7 +16,7 @@ const experienceObject = [
             `As a Software Engineer I've built many solutions for Green Field projects for a diversity of industries, including Healthcare, SupplyChain, ` +
             `Finance and even Cosmetics. Solutions have ranged from Web Applications, to ETL Pipelines, to Testing Frameworks, to even Machine Learning Models.`,
         technologies: {
-            'Languages': ['Python', 'JavaScript', 'TypeScript', 'HTML', 'CSS/SCSS', 'Bash', 'SQL/HiveQL' ],
+            'Languages': ['Python', 'JavaScript', 'TypeScript', 'HTML', 'CSS/SCSS', 'Bash', 'SQL' ],
             'Techologies': [ 'Angular', 'React', 'Flask',
                 'Express', 'Docker', 'Kubernetes',
                 'AWS', 'Terraform', 'CircleCI',
@@ -86,12 +65,9 @@ const experienceObject = [
         timeRange: 'Sept 2011 - May 2015',
         experienceType: 'Education',
         position: 'B.S. Computer Science and Physics',
-        about: `InterPro Solutions is a leader in providing products and services that increases productivity for Maximo users. ` +
-            `Maximo is an IBM Software for Enterprise Asset Management. As a software engineer I primarily acted as a developer ` +
-            `for the company's award winning EZMaxMobile product. EZMaxMobile is a responsive Web Application that provides a company’s ` +
-            `workforce the ability to view and use Maximo applications efficiently through their mobile devices, both online and offline. ` +
-            `I designed, implemented and tested new features for EZMaxMobile. I also ` +
-            `assisted individual clients in customizing the platform to confirm to their business requirements.`,
+        about: `I studied at the University of Maryland, where I received a double degree in Physics and Computer Science. ` +
+            `During my time their I was a research Assistant for the Astrophysics department. I performed Statistical Analysis ` +
+            `and built software for IceCube, a Neutrino Detector in the South Pole. `,
         technologies: {
             'Languages': ['Python', 'C', 'SQL', 'MATLAB'],
             'Techologies': [ 'Jupyter Notebooks', 'Pandas/Numpy', 'Linux', 'MySQL', ]
@@ -105,8 +81,8 @@ class LandingRowExperience extends React.Component {
         super(props);
         this.props = props;
         experienceObject.map((experience) => {
-            return experience.onClick = () => {
-                return this.setState({selectedExperience: experience});
+            experience.onClick = () => {
+                this.setState({selectedExperience: experience});
             };
         });
         this.state = {selectedExperience: experienceObject[0]};
@@ -115,6 +91,9 @@ class LandingRowExperience extends React.Component {
     render () {
         return (
             <ThemeProvider theme={theme}>
+                <Fade>
+                  <StyledTitle><i> My Education and Experience </i></StyledTitle>
+                </Fade>
                 <StyledRow id={this.props.id}>
                     <Fade>
                         <div className="experience-container">

@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 12px;
-    background-color: ${(props) => props.theme.background};
+    background-color: ${(props) => props.theme.foreground};
     box-shadow: -1px 15px 30px -12px black;
     border-radius: 20px;
     .timeline-button {

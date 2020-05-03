@@ -55,7 +55,7 @@ class LandingRowAbout extends React.Component {
                       </div>
                     </Fade>
                 </StyledRow>
-                <svg className={'about-wave'} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+                <svg className={'about-wave'} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
                   <path fill={theme.foreground} fill-opacity="1" d="M0,64L80,58.7C160,53,320,43,480,48C640,53,800,75,960,74.7C1120,75,1280,53,1360,42.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
                 </svg>
 

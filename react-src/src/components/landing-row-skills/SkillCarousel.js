@@ -5,6 +5,7 @@ import { FaGraduationCap, FaUserTie } from 'react-icons/fa';
 
 
 const StyledDiv = styled.div`
+  overflow-y: visible;
 `
 
 

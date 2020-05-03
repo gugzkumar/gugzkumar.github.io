@@ -11,6 +11,9 @@ const menuItems = [
 const StyledFooter = styled.div`
     color: ${props => props.theme.background};
     background-color: ${props => props.theme.foreground};
+    height: 56px;
+    text-align: center;
+    padding-top: 12px;
     ul {
       display: block;
       padding: 0;
@@ -39,11 +42,7 @@ class Footer extends React.Component {
         return (
             <ThemeProvider theme={theme}>
                 <StyledFooter>
-                    <ul>
-                        {menuItems.map(({ label, link }) => {
-                            return <li key={label}>{label}</li>
-                        })}
-                    </ul>
+                     © Gagan Kumar Tunuguntla
                 </StyledFooter>
             </ThemeProvider>
         )

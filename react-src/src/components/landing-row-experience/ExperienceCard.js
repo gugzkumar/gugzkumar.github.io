@@ -6,10 +6,10 @@ const StyledCard = styled.div`
     background-color: ${(props) => props.theme.background};
     border-radius: 15px;
     max-width: 680px;
-    max-height: 556px;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: -1px 15px 30px -12px black;
+    /* box-shadow: -1px 15px 30px -12px black; */
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     flex-direction: column;
     text-align:left;
     h1, h2, h3 {
