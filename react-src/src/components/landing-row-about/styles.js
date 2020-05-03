@@ -1,29 +1,28 @@
 import styled from "styled-components";
+import Background from './background.jpeg';
 
 export const StyledRow = styled.div`
-    color: ${props => props.theme.foreground};
-    background-color: ${props => props.theme.primaryAbout};
+    color: ${props => props.theme.background};
+    background-color: ${props => props.theme.foreground};
     height: calc(100% + 1px);
     width: 100%;
     margin: 0;
-    /* display: flex; */
-    display: ${props => (props.showRow ? 'flex' : 'none')};
+    display: flex;
     flex-direction: column;
-    padding-top: 10%;
-    /* justify-content: center; */
+    padding-top: 5%;
     text-align: left;
-    padding-left: 8%;
+    padding-left: ${props => props.theme.spacing.leftPadding};
+    padding-bottom: 2%;
     word-wrap: break-word;
     .about-caption {
         font-size: 56px;
-        color: ${props => props.theme.secondaryAbout};
+        color: ${props => props.theme.background};
         font-family: "Itim";
         letter-spacing: 2px;
-        /* font-size: 5vw; */
     }
     .about-intro {
         font-size: 44px;
-        color: ${props => props.theme.secondaryAbout};
+        color: ${props => props.theme.background};
         font-family: "Itim";
         letter-spacing: 2px;
         /* font-size: 4vw; */
@@ -32,27 +31,22 @@ export const StyledRow = styled.div`
         font-size: 56px;
         font-family: "Itim";
         letter-spacing: 2px;
-        /* font-size: 5vw; */
+        color: ${props => props.theme.yellow};
     }
     .about-description {
         margin-top: 16px;
         max-width: 700px;
         margin-right: 15%;
-        /* background-color: ${props => props.theme.background}; */
-        /* padding: 10px; */
-        /* border-radius: 10px; */
-        /* box-shadow: -1px 15px 30px -12px black; */
-        /* font-size: 1.5vw; */
-        color: ${props => props.theme.secondaryAbout};
+        color: ${props => props.theme.background};
         b {
-            color: ${props => props.theme.foreground};
+            color: ${props => props.theme.yellow};
             a {
-              color: #1f6ce6;
+              color: ${props => props.theme.blue};;
             }
         }
     }
     .about-button-row {
-        margin-top: 24px;
+        margin-top: 40px;
     }
 `
 
@@ -61,18 +55,17 @@ export const  StyledButton = styled.button`
     background-color: ${props => props.theme.background};
     border: none;
     border-radius: 10px;
-    box-shadow: -1px 15px 30px -12px black;
     padding: 8px;
     margin-right: 16px;
     cursor: pointer;
     &:focus {
-        background-color: ${props => props.theme.foreground};
+        background-color: ${props => props.theme.registrationBlack};
         color: ${props => props.theme.background};
         box-shadow: -1px 5px 30px -5px black;
         outline: none;
     }
     &:active {
-        background-color: ${props => props.theme.secondaryAbout};
+        background-color: ${props => props.theme.registrationBlack};
     }
     svg {
         vertical-align: sub;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledRow = styled.div`
     color: ${props => props.theme.foreground};
-    background-color: ${props => props.theme.primarySkills};
+    background-color: ${props => props.theme.background};
     height: calc(100% + 1px);
     margin: 0;
     text-align: center;
@@ -10,6 +10,7 @@ export const StyledRow = styled.div`
     align-items: center;
     align-content: center;
     justify-content: center;
+    padding-bottom: 5%;
 
     &.screen-desktop {
         display: flex;
@@ -38,6 +39,12 @@ export const StyledRow = styled.div`
         }
     }
 `
+export const StyledTitle = styled.h1`
+    padding-top: 5%;
+    margin-bottom: 32px;
+    width: 100%;
+    text-align: center;
+`
 
 export const SkillCard = styled.div`
     background-color: ${props => props.theme.background};
@@ -55,7 +62,7 @@ export const SkillCard = styled.div`
         background-color: white;
         padding: 15px;
         border-radius: 15px;
-        fill: ${props => props.theme.secondarySkills};
+        fill: ${props => props.theme.foreground};
     }
     h2 {
         margin: 16px 0px;

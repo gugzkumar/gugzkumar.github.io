@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 const StyledRow = styled.div`
     color: ${props => props.theme.foreground};
-    background-color: ${props => props.theme.primaryExperience};
+    background-color: ${props => props.theme.background};
     height: calc(100% + 1px);
     width: 100%;
     margin: 0;
@@ -24,6 +24,7 @@ const StyledRow = styled.div`
     .timeline {
         margin-bottom: 24px;
     }
+    padding-bottom: 5%;
 `
 
 const experienceObject = [

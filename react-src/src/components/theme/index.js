@@ -10,20 +10,20 @@ const white = "#FDFFFC";
 
 const yellow = "#FFD000";
 const yellowCompliment = "#726012";
-// const yellowCompliment = "#ffe364";
+const lightYellow = "#ffe364";
 // const yellow ="#EDAE49"
 
-// const blue = "#3772FF";
+const blue = "#3772FF";
 // 256EFF
 
-// const purple = "#41337A";
-// const purple ="#8A1C7C";
+const darkPurple = "#41337A";
+const purple ="#8A1C7C";
 
 const green = "#7CB518";
 const greenCompliment = "#5C8001";
 
 // const yellowOrange = "#FF9F1C";
-// const orange="#FB6107"
+const orange="#FB6107"
 const roseMadder = "#E71D36";
 // const blueGreen = "#2EC4B6";
 // const blueGreenCompliment = "#80e4d9"
@@ -35,7 +35,7 @@ export default {
     secondary: yellow, // colors used second most widely used across all screens and components.
     accent: maroon, // colors used for the floating action button and interactive elements.
     background: white, // colors for text and icons.
-    foreground: smokeyblack, // colors used for element backgrounds.
+    foreground: darkPurple, // colors used for element backgrounds.
     // Pages
     navbar: darkBlue,
     primaryAbout: yellow,
@@ -56,6 +56,9 @@ export default {
     darkSienna: darkSienna,
     maroon: maroon,
     yellow: yellow,
+    lightYellow: lightYellow,
+    blue: blue,
+    orange: orange,
     // fonts
     fonts: {
         Orbitron: "Orbitron",
@@ -66,5 +69,8 @@ export default {
     breakPoints: {
         tablet: 1024,
         mobile: 720
+    },
+    spacing: {
+        leftPadding: '5%'
     }
 }

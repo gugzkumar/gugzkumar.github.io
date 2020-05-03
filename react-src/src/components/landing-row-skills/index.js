@@ -7,7 +7,7 @@ import DataEngineeringSVG from './DataEngineeringSVG';
 import DevOpsSVG from './DevOpsSVG';
 import WebDevelopmentSVG from './WebDevelopmentSVG';
 import LeadershipSVG from './LeadershipSVG';
-import { StyledRow, SkillCard } from './styles';
+import { StyledRow, StyledTitle, SkillCard } from './styles';
 
 const swipeableStyles = {
   root: {
@@ -29,6 +29,7 @@ class LandingRowSkills extends React.Component {
         return (
             <ThemeProvider id={this.props.id} theme={theme}>
                 <div id={this.props.id} style={{'height': 'calc(100% + 1px)'}}>
+                <StyledTitle> My Skills </StyledTitle>
                 <StyledRow className="screen-desktop">
                     <Fade>
                         <SkillCard>

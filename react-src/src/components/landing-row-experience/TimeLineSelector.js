@@ -27,7 +27,7 @@ const StyledDiv = styled.div`
         cursor: pointer;
         &:hover {
             background-color: ${(props) => props.theme.background};
-            color: ${(props) => props.theme.secondaryExperience};
+            color: ${(props) => props.theme.foreground};
         }
         transition: .4s;
     }
@@ -38,7 +38,7 @@ const StyledDiv = styled.div`
         font-size: 24px;
         padding: 8px;
         background-color: ${(props) => props.theme.background};
-        color: ${(props) => props.theme.secondaryExperience};
+        color: ${(props) => props.theme.foreground};
     }
 `
 

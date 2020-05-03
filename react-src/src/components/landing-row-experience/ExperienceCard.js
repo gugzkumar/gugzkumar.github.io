@@ -36,7 +36,7 @@ const StyledCard = styled.div`
         align-items: base-line;
         margin-bottom: 40px;
         .title-experience-type, .title-experience-position {
-            color: ${(props) => props.theme.secondaryExperience};
+            color: ${(props) => props.theme.foreground};
         }
     }
     .content-container {
