@@ -30,9 +30,8 @@ class LandingRowSkills extends React.Component {
     render () {
         return (
             <ThemeProvider id={this.props.id} theme={theme}>
-                <div id={this.props.id} style={{'height': 'calc(100% + 1px)'}}>
                 <Fade>
-                  <StyledTitle><i> My Skills </i></StyledTitle>
+                  <StyledTitle id={this.props.id} ><i> My Skills </i></StyledTitle>
                 </Fade>
                 <StyledRow className="screen-desktop">
                     <Fade>
@@ -97,7 +96,6 @@ class LandingRowSkills extends React.Component {
                         </Fade>
                     </SwipeableViews>
                 </StyledRow>
-                </div>
             </ThemeProvider>
         )
     }

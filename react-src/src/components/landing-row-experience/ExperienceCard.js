@@ -48,6 +48,18 @@ const StyledCard = styled.div`
     .title-experience-right-column {
         align-self: flex-end;
     }
+
+
+    @media only screen and (max-width: ${props => props.theme.breakPoints.mobile}px) {
+        .title-container {
+            flex-direction: column;
+            margin-bottom: 16px;
+        }
+        .title-experience-right-column {
+            align-self: flex-start;
+            margin-top: 16px;
+        }
+    }
 `
 
 

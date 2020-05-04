@@ -4,6 +4,13 @@ import styled from "styled-components";
 // import { Link } from "gatsby"
 import { Header, Footer } from "../";
 
+if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]', {
+	     speed: 900
+    });
+}
+
 const StyledLayout = styled.div`
     &,.app-content,.app-navbar,main {
         /* height: 100%; */

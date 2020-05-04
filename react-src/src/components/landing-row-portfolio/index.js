@@ -26,18 +26,22 @@ class LandingRowPortfolio extends React.Component {
                     <StyledTitle id={this.props.id}><i> My Portfolio </i></StyledTitle>
                 </Fade>
                 <StyledRow>
-                    <StyledProjectContainer className={'left'} >
-                        <Monitor className={'portfolio-project-monitor'} imgSrc={ScreenShotOne}/>
-                        <StyledProjectDescription>
-                            <h2> Personal Webpage and Blog </h2>
-                        </StyledProjectDescription>
-                    </StyledProjectContainer>
-                    <StyledProjectContainer>
-                        <Monitor className={'portfolio-project-monitor'} imgSrc={ScreenShotTwo}/>
-                        <StyledProjectDescription className={'right'}>
-                          <h2> Cheet Sheet </h2>
-                        </StyledProjectDescription>
-                    </StyledProjectContainer>
+                    <Fade>
+                        <StyledProjectContainer className={'left'} >
+                            <Monitor className={'portfolio-project-monitor'} imgSrc={ScreenShotOne}/>
+                            <StyledProjectDescription>
+                                <h2> Personal Webpage and Blog </h2>
+                            </StyledProjectDescription>
+                        </StyledProjectContainer>
+                    </Fade>
+                    <Fade>
+                        <StyledProjectContainer>
+                            <Monitor className={'portfolio-project-monitor'} imgSrc={ScreenShotTwo}/>
+                            <StyledProjectDescription className={'right'}>
+                              <h2> Cheet Sheet </h2>
+                            </StyledProjectDescription>
+                        </StyledProjectContainer>
+                    </Fade>
                 </StyledRow>
             </ThemeProvider>
         )

@@ -14,7 +14,7 @@ const lightYellow = "#ffe364";
 // const yellow ="#EDAE49"
 
 const blue = "#3772FF";
-// 256EFF
+const darkBlue = "#00035d";
 
 const darkPurple = "#41337A";
 const purple ="#8A1C7C";
@@ -27,7 +27,7 @@ const orange="#FB6107"
 const roseMadder = "#E71D36";
 // const blueGreen = "#2EC4B6";
 // const blueGreenCompliment = "#80e4d9"
-const darkBlue = "#011627";
+// const darkBlue = "#011627";
 
 
 export default {
@@ -35,7 +35,7 @@ export default {
     secondary: yellow, // colors used second most widely used across all screens and components.
     accent: maroon, // colors used for the floating action button and interactive elements.
     background: white, // colors for text and icons.
-    foreground: darkPurple, // colors used for element backgrounds.
+    foreground: darkBlue, // colors used for element backgrounds.
     // Pages
     navbar: darkBlue,
     primaryAbout: yellow,
@@ -59,6 +59,7 @@ export default {
     lightYellow: lightYellow,
     blue: blue,
     orange: orange,
+    green: green,
     // fonts
     fonts: {
         Orbitron: "Orbitron",

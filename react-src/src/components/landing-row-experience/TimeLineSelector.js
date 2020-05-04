@@ -23,7 +23,7 @@ const StyledDiv = styled.div`
         border-radius: 18px;
         padding: 4px;
         font-size: 16px;
-        box-shadow: -1px 15px 30px -12px black;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
         cursor: pointer;
         &:hover {
             background-color: ${(props) => props.theme.background};

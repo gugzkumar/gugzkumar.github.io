@@ -14,6 +14,31 @@ export const StyledRow = styled.div`
     padding-left: ${props => props.theme.spacing.leftPadding};
     padding-bottom: 2%;
     word-wrap: break-word;
+    overflow: hidden;
+    .background {
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+
+        /* Rules below not implemented in browsers yet */
+        -o-user-select: none;
+        user-select: none;
+        position: absolute;
+        margin-left: -5%;
+        font-size: 10px;
+        opacity: .3;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        .background-text-right {
+            float: right;
+            margin-top: 100px;
+        }
+        .background-text-left {
+            float: left;
+            margin-top: 100px;
+        }
+    }
     .about-caption {
         font-size: 56px;
         color: ${props => props.theme.background};

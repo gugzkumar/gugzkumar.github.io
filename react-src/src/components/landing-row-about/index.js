@@ -21,6 +21,18 @@ class LandingRowAbout extends React.Component {
         return (
             <ThemeProvider theme={theme}>
                 <StyledRow id={this.props.id}>
+                    <div className="background">
+                        {/*
+                            content.background.map((bkgText, i) => (
+                                <div
+                                    key={i}
+                                    className= {i % 2 == 1 ? `background-text-right` : `background-text-left`}
+                                >
+                                  {bkgText}
+                                </div>
+                            ))
+                        */}
+                    </div>
                     <Fade bottom>
                         <div className={'about-intro'}>
                             {content.intro}
@@ -36,12 +48,12 @@ class LandingRowAbout extends React.Component {
                             <b>{content.caption}</b>
                         </div>
                     </Fade>
-                    <Fade>
+                    <Fade delay={1000}>
                         <div className={'about-description'}>
                             {content.description}
                         </div>
                     </Fade>
-                    <Fade>
+                    <Fade delay={1000}>
                       <div className={'about-button-row'}>
                           <StyledButton> GitHub <FaGithub/> </StyledButton>
                           <StyledButton> Linkedin <FaLinkedin/> </StyledButton>

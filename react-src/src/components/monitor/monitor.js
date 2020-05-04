@@ -73,9 +73,9 @@ class Monitor extends React.Component {
     render () {
         return (
           <StyledMonitor className={this.props.className}>
-              <div class="container">
-                  <div class="screen monitor">
-                      <div class="content">
+              <div className="container">
+                  <div className="screen monitor">
+                      <div className="content">
                           <img src={this.props.imgSrc}/>
                       </div>
                   </div>
