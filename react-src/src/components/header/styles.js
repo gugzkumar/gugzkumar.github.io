@@ -38,6 +38,11 @@ export const StyledHeader = styled.div`
         }
     }
 
+    @media only screen and (max-width: ${props => props.theme.breakPoints.mobile}px) {
+        .social-media-container {
+            margin: 0px 0px;
+        }
+    }
 `
 
 export const StyledLinkContainer = styled.div`

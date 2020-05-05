@@ -11,7 +11,7 @@ const menuItems = [
     { label: 'Skills' , link: '/#skills', backgroundcolor: theme.primarySkills, color: theme.background, id:"skills" },
     { label: 'Experience' , link: '/#experience', backgroundcolor: theme.primaryExperience, color: theme.foreground, id:"experience" },
     { label: 'Portfolio' , link: '/#portfolio', backgroundcolor: theme.primaryAbout, color: theme.foreground, id:"portfolio" },
-    { label: 'Blogs' , link: '/blog', backgroundcolor: theme.primaryBlogs, color: theme.foreground, id:"blogs" }
+    { label: 'Blog' , link: '/blog', backgroundcolor: theme.primaryBlogs, color: theme.foreground, id:"blogs" }
 ];
 
 
