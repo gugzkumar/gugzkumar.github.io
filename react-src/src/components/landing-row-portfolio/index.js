@@ -30,7 +30,16 @@ class LandingRowPortfolio extends React.Component {
                         <StyledProjectContainer className={'left'} >
                             <Monitor className={'portfolio-project-monitor'} imgSrc={ScreenShotOne}/>
                             <StyledProjectDescription>
-                                <h2> Personal Webpage and Blog </h2>
+                                <h2>Personal Webpage and Blog </h2>
+                                <p>This is my proffesional website and blog. It's also the current site you are on.</p>
+                                <ul>
+                                  <li>React</li>
+                                  <li>Javascript</li>
+                                  <li>Responsive Web App</li>
+                                  <li>HTML</li>
+                                  <li>SCSS</li>
+                                  <li>CircleCi</li>
+                                </ul>
                             </StyledProjectDescription>
                         </StyledProjectContainer>
                     </Fade>
@@ -38,7 +47,19 @@ class LandingRowPortfolio extends React.Component {
                         <StyledProjectContainer>
                             <Monitor className={'portfolio-project-monitor'} imgSrc={ScreenShotTwo}/>
                             <StyledProjectDescription className={'right'}>
-                              <h2> Cheet Sheet </h2>
+                                <h2>Cheet Sheet </h2>
+                                <p>A content manager for engineers and engineering teams to save their code snippets.</p>
+                                <ul>
+                                    <li>Angular</li>
+                                    <li>Python</li>
+                                    <li>Typescript</li>
+                                    <li>Node</li>
+                                    <li>SCSS</li>
+                                    <li>AWS</li>
+                                    <li>Serverless</li>
+                                    <li>Docker</li>
+                                    <li>CircleCi</li>
+                                </ul>
                             </StyledProjectDescription>
                         </StyledProjectContainer>
                     </Fade>

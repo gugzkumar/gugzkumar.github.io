@@ -19,11 +19,12 @@ export const StyledRow = styled.div`
     .timeline {
         margin-bottom: 24px;
     }
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
 `
 
 export const StyledTitle = styled.h1`
-    padding-top: 5%;
+    margin: 0px;
+    padding-top: 45px;
     margin-bottom: 32px;
     width: 100%;
     text-align: center;

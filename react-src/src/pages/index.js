@@ -18,6 +18,22 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${props => props.theme.background};
   }
+  .wrapper {
+    padding-bottom: 0px;
+  }
+  hr {
+  	height: 1px;
+    width: 90%;
+    margin-top: 32px;
+  }
+  hr {
+      overflow: visible; /* For IE */
+      border: none;
+      height: 1px;
+      background: radial-gradient(${props => props.theme.foreground}, ${props => props.theme.background});
+      color: ${props => props.theme.foreground};
+      text-align: center;
+  }
 `
 
 
@@ -44,7 +60,9 @@ class LandingPage extends React.Component {
                 <Layout location={this.props.location}>
                     <LandingRowAbout id="about" />
                     <LandingRowSkills id="skills" />
+                    <div className="wrapper"><hr/></div>
                     <LandingRowExperience id="experience" />
+                    <hr/>
                     <LandingRowPortfolio id="portfolio" />
                 </Layout>
             </>

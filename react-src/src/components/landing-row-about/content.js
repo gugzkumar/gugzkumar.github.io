@@ -10,7 +10,7 @@ export default {
       <br/><br/>
       My belief is to build <b>Products over Software</b> and that being able to <b>communicate effectively</b> and <b>working with others</b> is more important than any Tech you know.
       <br/><br/>
-      I also have a personal blog on this website that I try to use as an outlet to the share the things I've learned as an engineer.
+      I also have a personal blog on this website that I try to use as an outlet to share the things I've learned as an engineer.
     </>,
     background: [
         `      import { decode } from "@webassemblyjs/wasm-parser";`,

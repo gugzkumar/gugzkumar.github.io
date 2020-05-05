@@ -17,6 +17,8 @@ export const StyledRow = styled.div`
 `
 
 export const StyledTitle = styled.h1`
+    margin: 0px;
+    padding-top: 45px;
     margin-bottom: 32px;
     width: 100%;
     text-align: center;
