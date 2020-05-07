@@ -17,6 +17,7 @@ import { createGlobalStyle } from "styled-components"
 const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${props => props.theme.background};
+    color:  ${props => props.theme.foreground};
   }
   .wrapper {
     padding-bottom: 0px;
@@ -30,8 +31,7 @@ const GlobalStyle = createGlobalStyle`
       overflow: visible; /* For IE */
       border: none;
       height: 1px;
-      background: radial-gradient(${props => props.theme.foreground}, ${props => props.theme.background});
-      color: ${props => props.theme.foreground};
+      background: radial-gradient(${props => props.theme.secondaryAccent}, ${props => props.theme.background});
       text-align: center;
   }
 `
@@ -55,9 +55,9 @@ class LandingPage extends React.Component {
     render () {
         return (
             <>
-                <GlobalStyle theme={theme} />
                 <SEO title="Software Engineer"/>
                 <Layout location={this.props.location}>
+                    <GlobalStyle/>
                     <LandingRowAbout id="about" />
                     <LandingRowSkills id="skills" />
                     <div className="wrapper"><hr/></div>

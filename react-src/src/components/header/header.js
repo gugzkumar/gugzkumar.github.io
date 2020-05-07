@@ -29,7 +29,7 @@ class Header extends React.Component {
     render () {
 
         return (
-            <ThemeProvider theme={theme}>
+            <>
                 <StyledHeader className={this.props.className}>
                     <Scrollspy items={menuItems.map(obj => obj.id)} currentClassName="is-current" >
                         {menuItems.map(({ label, link, backgroundcolor, color }) => {
@@ -45,7 +45,7 @@ class Header extends React.Component {
                         <FaGithub />
                     </div>
                 </StyledHeader>
-            </ThemeProvider>
+            </>
         )
     }
 

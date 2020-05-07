@@ -21,7 +21,7 @@ class LandingRowPortfolio extends React.Component {
 
     render () {
         return (
-            <ThemeProvider theme={theme}>
+            <>
                 <Fade>
                     <StyledTitle id={this.props.id}><i> My Portfolio </i></StyledTitle>
                 </Fade>
@@ -48,7 +48,7 @@ class LandingRowPortfolio extends React.Component {
                             <Monitor className={'portfolio-project-monitor'} imgSrc={ScreenShotTwo}/>
                             <StyledProjectDescription className={'right'}>
                                 <h2>Cheet Sheet </h2>
-                                <p>A content manager for engineers and engineering teams to save their code snippets.</p>
+                                <p>Cheet Sheet is an open source Content Management System for developers and development teams to Create, Edit and Share code snippets.</p>
                                 <ul>
                                     <li>Angular</li>
                                     <li>Python</li>
@@ -56,7 +56,7 @@ class LandingRowPortfolio extends React.Component {
                                     <li>Node</li>
                                     <li>SCSS</li>
                                     <li>AWS</li>
-                                    <li>Serverless</li>
+                                    <li>Serverless Design</li>
                                     <li>Docker</li>
                                     <li>CircleCi</li>
                                 </ul>
@@ -64,7 +64,7 @@ class LandingRowPortfolio extends React.Component {
                         </StyledProjectContainer>
                     </Fade>
                 </StyledRow>
-            </ThemeProvider>
+            </>
         )
     }
 

@@ -22,7 +22,7 @@ class LandingRowExperience extends React.Component {
 
     render () {
         return (
-            <ThemeProvider theme={theme}>
+            <>
                 <Fade>
                   <StyledTitle id={this.props.id}><i> My Education and Experience </i></StyledTitle>
                 </Fade>
@@ -34,7 +34,7 @@ class LandingRowExperience extends React.Component {
                         </div>
                     </Fade>
                 </StyledRow>
-            </ThemeProvider>
+            </>
         )
     }
 

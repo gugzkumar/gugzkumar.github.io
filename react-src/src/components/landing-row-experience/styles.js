@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const StyledRow = styled.div`
-    color: ${props => props.theme.registrationBlack};
-    background-color: ${props => props.theme.background};
     height: calc(100% + 1px);
     width: 100%;
     margin: 0;
@@ -19,7 +17,6 @@ export const StyledRow = styled.div`
     .timeline {
         margin-bottom: 24px;
     }
-    /* padding-bottom: 5%; */
 `
 
 export const StyledTitle = styled.h1`
@@ -28,5 +25,4 @@ export const StyledTitle = styled.h1`
     margin-bottom: 32px;
     width: 100%;
     text-align: center;
-    color: ${props => props.theme.foreground};
 `

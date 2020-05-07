@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from "styled-components";
 
 const StyledCard = styled.div`
-    background-color: ${(props) => props.theme.background};
+    background-color: ${(props) => props.theme.cards};
     border-radius: 15px;
     max-width: 680px;
     padding: 20px;
@@ -36,7 +36,7 @@ const StyledCard = styled.div`
         align-items: base-line;
         margin-bottom: 40px;
         .title-experience-type, .title-experience-position {
-            color: ${(props) => props.theme.foreground};
+            color: ${(props) => props.theme.primaryAccent};
         }
     }
     .content-container {

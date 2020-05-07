@@ -10,14 +10,14 @@ const StyledDiv = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 12px;
-    background-color: ${(props) => props.theme.foreground};
+    background-color: ${(props) => props.theme.primaryAccent};
     box-shadow: -1px 15px 30px -12px black;
     border-radius: 20px;
     .timeline-button {
         box-sizing: content-box;
         align-items: center;
-        background-color: ${(props) => props.theme.foreground};
-        color: ${(props) => props.theme.background};
+        background-color: ${(props) => props.theme.primaryAccent};
+        color: ${(props) => props.theme.foreground};
         height: 18px;
         width: 18px;
         border-radius: 18px;
@@ -26,8 +26,8 @@ const StyledDiv = styled.div`
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
         cursor: pointer;
         &:hover {
-            background-color: ${(props) => props.theme.background};
-            color: ${(props) => props.theme.foreground};
+            background-color: ${(props) => props.theme.foreground};
+            color: ${(props) => props.theme.primaryAccent};
         }
         transition: .4s;
     }
@@ -37,8 +37,8 @@ const StyledDiv = styled.div`
         border-radius: 28px;
         font-size: 24px;
         padding: 8px;
-        background-color: ${(props) => props.theme.background};
-        color: ${(props) => props.theme.foreground};
+        background-color: ${(props) => props.theme.foreground};
+        color: ${(props) => props.theme.primaryAccent};
     }
 `
 

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const StyledRow = styled.div`
-    color: ${props => props.theme.registrationBlack};
-    background-color: ${props => props.theme.background};
     height: calc(100% + 1px);
     margin: 0;
     text-align: center;
@@ -44,27 +42,24 @@ export const StyledTitle = styled.h1`
     margin-bottom: 32px;
     width: 100%;
     text-align: center;
-    color: ${props => props.theme.foreground};
 `
 
 export const SkillCard = styled.div`
-    background-color: ${props => props.theme.background};
+    background-color: ${props => props.theme.cards};
     width: 244px;
     height: 480px;
     margin: 12px 12px;
     padding: 1px;
     border-radius: 10px;
-    /* box-shadow: -1px 15px 30px -12px black; */
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     svg {
         margin-top: 16px;
         margin-top: 16px;
         height: 160px;
         width: 160px;
-        background-color: white;
         padding: 15px;
         border-radius: 15px;
-        fill: ${props => props.theme.foreground};
+        fill: ${props => props.theme[props.themeColor]};
     }
     h2 {
         margin: 16px 0px;

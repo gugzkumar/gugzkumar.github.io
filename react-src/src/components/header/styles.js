@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
 export const StyledHeader = styled.div`
-    color: ${props => props.theme.background};
-    background-color: ${props => props.theme.foreground};
+    color: ${props => props.theme.foreground};
+    background-color: ${props => props.theme.primaryAccent};
     display: flex;
     justify-content: space-between;
     z-index: 10;

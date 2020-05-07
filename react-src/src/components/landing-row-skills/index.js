@@ -30,7 +30,7 @@ class LandingRowSkills extends React.Component {
 
     render () {
         return (
-            <ThemeProvider id={this.props.id} theme={theme}>
+            <>
                 <Fade>
                   <StyledTitle id={this.props.id} ><i> My Skills </i></StyledTitle>
                 </Fade>
@@ -38,7 +38,7 @@ class LandingRowSkills extends React.Component {
                     {
                         content.skills.map(skill =>
                             <Fade key={skill.skillName}>
-                                <SkillCard>
+                                <SkillCard themeColor={skill.themeColor}>
                                     <h2> {skill.skillName} </h2>
                                     {skill.svgComponent}
                                     {skill.description}
@@ -53,7 +53,7 @@ class LandingRowSkills extends React.Component {
                         {
                             content.skills.map(skill =>
                                 <Fade key={skill.skillName}>
-                                    <SkillCard>
+                                    <SkillCard themeColor={skill.themeColor}>
                                         <h2> {skill.skillName} </h2>
                                         {skill.svgComponent}
                                         {skill.description}
@@ -63,7 +63,7 @@ class LandingRowSkills extends React.Component {
                         }
                     </SwipeableViews>
                 </StyledRow>
-            </ThemeProvider>
+            </>
         )
     }
 

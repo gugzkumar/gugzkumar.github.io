@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const StyledRow = styled.div`
-    color: ${props => props.theme.registrationBlack};
-    background-color: ${props => props.theme.background};
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -22,7 +20,6 @@ export const StyledTitle = styled.h1`
     margin-bottom: 32px;
     width: 100%;
     text-align: center;
-    color: ${props => props.theme.foreground};
 `
 
 export const StyledProjectContainer = styled.div`
@@ -31,6 +28,7 @@ export const StyledProjectContainer = styled.div`
     margin-bottom: 32px;
     display: flex;
     .portfolio-project-monitor {
+        flex-shrink: 0;
         width: 360px;
         margin-right: ${props => props.className === 'left' ? '16px' : ''};
     }

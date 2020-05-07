@@ -7,6 +7,11 @@ const bulgarianRose = "#500001";
 const darkSienna = "#2F1113";
 const maroon = "#7B0000";
 const white = "#FDFFFC";
+const softWhite ="#F1F1F1"
+
+const darkGrey = "#212121"
+const grey = "#303030"
+const lightGrey = "#424242"
 
 const yellow = "#FFD000";
 const yellowCompliment = "#726012";
@@ -28,6 +33,58 @@ const roseMadder = "#E71D36";
 // const blueGreen = "#2EC4B6";
 // const blueGreenCompliment = "#80e4d9"
 // const darkBlue = "#011627";
+
+export const getTheme = ( mode ) => {
+    const lightModeColors = {
+        primaryAccent: darkBlue, // Landing page, footer, header colors
+        secondaryAccent: yellow,
+        background: softWhite,
+        cards: white,
+        foreground: registrationBlack,
+        foreground: softWhite
+    }
+    const darkModeColors = {
+        primaryAccent: darkBlue, // Landing page, footer, header colors
+        secondaryAccent: yellow,
+        background: darkGrey,
+        cards: lightGrey,
+        foreground: softWhite,
+        reverseForeground: registrationBlack
+    }
+    const colors = {
+        // useable colors
+        registrationBlack: registrationBlack,
+        darkCandyAppleRed: darkCandyAppleRed,
+        bulgarianRose: bulgarianRose,
+        darkSienna: darkSienna,
+        roseMadder: roseMadder,
+        maroon: maroon,
+        yellow: yellow,
+        lightYellow: lightYellow,
+        blue: blue,
+        orange: orange,
+        green: green,
+        purple: purple,
+    }
+    const otherStyles = {
+      fonts: {
+          Orbitron: "Orbitron",
+          Nunito: "Nunito",
+          Itim: "Itim"
+      },
+      // Break Points
+      breakPoints: {
+          desktop: 1440,
+          laptop: 1024,
+          mobile: 720
+      },
+      spacing: {
+          leftPadding: '5%'
+      }
+    }
+    const coreColors = mode === 'LIGHT' ? lightModeColors : darkModeColors;
+    return { ...coreColors, ...otherStyles, ...colors};
+}
 
 
 export default {
@@ -54,13 +111,16 @@ export default {
     darkCandyAppleRed: darkCandyAppleRed,
     bulgarianRose: bulgarianRose,
     darkSienna: darkSienna,
+    roseMadder: roseMadder,
     maroon: maroon,
     yellow: yellow,
     lightYellow: lightYellow,
     blue: blue,
     orange: orange,
     green: green,
+    purple: purple,
     // fonts
+
     fonts: {
         Orbitron: "Orbitron",
         Nunito: "Nunito",

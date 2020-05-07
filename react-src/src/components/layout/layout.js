@@ -1,8 +1,9 @@
 import React from "react"
 import {Helmet} from "react-helmet";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 // import { Link } from "gatsby"
 import { Header, Footer } from "../";
+import { getTheme } from "../theme";
 
 if (typeof window !== "undefined") {
     // eslint-disable-next-line global-require
@@ -36,10 +37,9 @@ class Layout extends React.Component {
     // const { location, title, children } = this.props;
     // const rootPath = `${__PATH_PREFIX__}/`;
     const { children } = this.props;
-    // const header = <Header/>;
 
     return (
-        <>
+        <ThemeProvider theme={getTheme('')}>
             <Helmet>
                 <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,600,700,800,900&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet" />
@@ -58,7 +58,7 @@ class Layout extends React.Component {
                 </div>
                 <Footer/>
             </StyledLayout>
-        </>
+        </ThemeProvider>
     )
   }
 }
